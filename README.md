@@ -16,6 +16,14 @@ The target of the project is to build a image classification model and move the 
   <h2>Building a VGG16 Model</h2>
   <p>For training this model I am using pytorch library. It provides torchvision module which will be used to download the pretrained model on Imagenet. I will describe the main steps in subsequents points.<a href="https://github.com/KaziShawon/imageclassification-docker-fastapi/blob/main/vgg16_vision_multiclass.ipynb"> Find the notebook here</a></p>
   <ol>
-    <li>The pretrained model is downloaded, as I am having 10 classes finetuning is done to classify the desired 10 classes. The classes are dog,horse,elephant,butterfly,gallina,chicken,cat,cow,sheep,spider,squirrel. <br> <img src="https://i.ibb.co/xqBgqY2/getmodel.jpg" alt="getmodel" border="0"></li>
+    <li>The pretrained model is downloaded, as I am having 10 classes finetuning is done to classify the desired 10 classes, it can be seen that at the very last layer it has 10 FC layers. The classes are dog,horse,elephant,butterfly,gallina,chicken,cat,cow,sheep,spider,squirrel. <br> <img src="https://i.ibb.co/xqBgqY2/getmodel.jpg" alt="getmodel" border="0"></li>
+    <li>Data augmentation like: RandomRotation, RandomResizedCrop, RandomHorizontalFlip is being used to create data loader. For training set 80% of the images being used. And for training and validation set 10% per each is being used.</li>
+    <li>Loss function CrossEntropyLoss is used. Adam optimizer is used to update learning parameters of each neural network parameter during during. CosineAnnealingLR is used to set learning rate accoring to the validation loss, if the loss increases the model assigns bigger step to gradient descent, for lower loss vice versa. <img src="https://i.ibb.co/d2j1R7S/training.jpg" alt="training" border="0"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
   </ol>
 </div>
