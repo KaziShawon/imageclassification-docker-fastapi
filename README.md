@@ -1,4 +1,3 @@
-# imageclassification-docker-fastapi
 ## About the Project
 The target of the project is to build a image classification model and move the model to production. The approaches which are being embraced are:
 <ol>
@@ -43,5 +42,16 @@ The target of the project is to build a image classification model and move the 
     <li>The docker is built with this: docker build -t imageclf:latest . <br><img src="https://i.ibb.co/74WpWT7/dockerbuild.jpg" alt="dockerbuild" border="0"></li>
     <li>The port is forwarded to 5000 to get the response from the image. To send the request this shell command is being used: "curl -X POST "http://127.0.0.1:5000/predict" -H "accept:application/json" -H "Content-Type: multipart/form-data" -F "file=@/home/kz/Downloads/elephant.jpg;type=image/jpg"
 ". From the image it can be seen that the response is two values, one is class name and second is confidence score. <br><img src="https://i.ibb.co/fCbwcFP/dockerinft2o.jpg" alt="dockerinft2o" border="0"></li>
+  </ol>
+</div>
+<div>
+  <h2>Shipping and running Docker container in the cloud.</h2>
+  <p>I don't have AWS account. But here the basic steps has been discussed of running the container on the cloud.
+  <ol>
+    <li>Configure AWS on the local machine. The AWS CLI can be installed from the official website.</li>
+    <li>Create a Docker repository on AWS ECR and push the imageclf:latest
+image.</li>
+    <li>Create an EC2 instance and install the dependencies in it.</li>
+    <li>Create and run the Docker image on the EC2 instance. A public ip address can be set up to send api request and get response with curl in local machine.</li>
   </ol>
 </div>
