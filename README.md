@@ -23,5 +23,24 @@ The target of the project is to build a image classification model and move the 
     <li>Few things are important in pytorch. When the model is traing, the datset and model should be sent to the device (cpu/gpu). And before training model should be set to train model with model.train(). For evaluation and test model.eval(). When the evaluation and test phase happens it should be run with torch.no_grad(), as it obstructs the model to update the gradients at that time.</li>
     <li>Softmax function is used for probability of multiclass classification.</li>
     <li>The model has achieved 96% accuracy with test set, which dataset model has not seen during training.</li>
+    <li>The best model according to the best validation accuracy is being saved in directory.</li>
+  </ol>
+</div>
+<div>
+  <h2>Creating an API and making prediction on a local server</h2>
+  We will use fastapi to make a classification on local server, then we will build docker image out of it and make a prediction with curl command.
+  <ol>
+    <li>A Classification module in classifcation.py file is being set up. Where the pretrained model is being downloaded one time and the required finetuning is done according to the model's architecture. Every image being sent as a request it will be resized to our model's desired input.</li>
+    <li>In server.py the get and post method is built. The requested image will be read as bytes format and for every request our predict function will called to return the prediction as well as confidence. <br><img src="https://i.ibb.co/XxH7tGw/uvicorn.jpg" alt="uvicorn" border="0"> <br><img src="https://i.ibb.co/yhrmZBz/fastapiinfernec.jpg" alt="fastapiinfernec" border="0"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
   </ol>
 </div>
