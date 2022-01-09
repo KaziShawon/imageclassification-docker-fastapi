@@ -12,4 +12,4 @@ The target of the project is to build a image classification model and move the 
   <li>Deploying the FMNIST classifier on an Amazon Web Services (AWS) Elastic Compute Cloud (EC2)</li>
 </ol>
 
-<h2>
+<h2>Building a VGG16 Model</h2>
