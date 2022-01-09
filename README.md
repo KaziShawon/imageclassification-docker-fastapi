@@ -16,6 +16,6 @@ The target of the project is to build a image classification model and move the 
   <h2>Building a VGG16 Model</h2>
   <p>For training this model I am using pytorch library. It provides torchvision module which will be used to download the pretrained model on Imagenet. I will describe the main steps in subsequents points.<a href="https://github.com/KaziShawon/imageclassification-docker-fastapi/blob/main/vgg16_vision_multiclass.ipynb"> Find the notebook here</a></p>
   <ol>
-    <li>The pretrained model is downloaded, as I am having 10 classes finetuning is done to classify the desired 10 classes. The classes are dog,horse,elephant,butterfly,gallina,chicken,cat,cow,sheep,spider,squirrel <img src="https://i.ibb.co/xqBgqY2/getmodel.jpg" alt="getmodel" border="0"></li>
+    <li>The pretrained model is downloaded, as I am having 10 classes finetuning is done to classify the desired 10 classes. The classes are dog,horse,elephant,butterfly,gallina,chicken,cat,cow,sheep,spider,squirrel. <br> <img src="https://i.ibb.co/xqBgqY2/getmodel.jpg" alt="getmodel" border="0"></li>
   </ol>
 </div>
