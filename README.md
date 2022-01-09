@@ -41,12 +41,7 @@ The target of the project is to build a image classification model and move the 
     <li>The requirements file is created with pip freeze > requirements.txt</li>
     <li>Few libraries are seperately installed as the docker hub provides larger files and it is avoided for that. The libraries are numpy, torch, torchvision.</li>
     <li>The docker is built with this: docker build -t imageclf:latest . <br><img src="https://i.ibb.co/74WpWT7/dockerbuild.jpg" alt="dockerbuild" border="0"></li>
-    <li>The port is forwarded to 5000 to get the response from the image. <br><img src="https://i.ibb.co/fCbwcFP/dockerinft2o.jpg" alt="dockerinft2o" border="0"></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>The port is forwarded to 5000 to get the response from the image. To send the request this shell command is being used: "curl -X POST "http://127.0.0.1:5000/predict" -H "accept:application/json" -H "Content-Type: multipart/form-data" -F "file=@/home/kz/Downloads/elephant.jpg;type=image/jpg"
+". From the image it can be seen that the response is two values, one is class name and second is confidence score. <br><img src="https://i.ibb.co/fCbwcFP/dockerinft2o.jpg" alt="dockerinft2o" border="0"></li>
   </ol>
 </div>
