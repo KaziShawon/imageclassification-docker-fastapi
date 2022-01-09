@@ -14,7 +14,7 @@ The target of the project is to build a image classification model and move the 
 
 <div>
   <h2>Building a VGG16 Model</h2>
-  <p>For training this model I am using pytorch library. It provides torchvision module which will be used to download the pretrained model on Imagenet. I will describe the main steps in subsequents points.[Code](https://github.com/KaziShawon/imageclassification-docker-fastapi/blob/main/vgg16_vision_multiclass.ipynb)</p>
+  <p>For training this model I am using pytorch library. It provides torchvision module which will be used to download the pretrained model on Imagenet. I will describe the main steps in subsequents points.<a target="_blank" href="https://github.com/KaziShawon/imageclassification-docker-fastapi/blob/main/vgg16_vision_multiclass.ipynb"> Find the notebook here</a></p>
   <ol>
     <li>Ok</li>
   </ol>
