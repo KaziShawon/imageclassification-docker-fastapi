@@ -2,7 +2,7 @@
 ## About the Project
 The target of the project is to build a image classification model and move the model to production. The approaches which are being embraced are:
 <ol>
-  <li>Building a deeplearning classification model from freely available datset. In this case <a href="https://www.kaggle.com/alessiocorrado99/animals10"></a></li>
+  <li>Building a deeplearning classification model from freely available datset. In this case <a href="https://www.kaggle.com/alessiocorrado99/animals10">This dataset is being used</a>.</li>
   <li>Set up a communication URL.</li>
   <li>Accept input from a wide variety of environments/formats when it is sent to the URL.</li>
   <li>Convert every form of input into the exact format that the machine learning model needs as input.</li>
