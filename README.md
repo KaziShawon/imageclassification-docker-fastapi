@@ -32,9 +32,15 @@ The target of the project is to build a image classification model and move the 
   <ol>
     <li>A Classification module in classifcation.py file is being set up. Where the pretrained model is being downloaded one time and the required finetuning is done according to the model's architecture. Every image being sent as a request it will be resized to our model's desired input.</li>
     <li>In server.py the get and post method is built. The requested image will be read as bytes format and for every request our predict function will called to return the prediction as well as confidence. <br><img src="https://i.ibb.co/XxH7tGw/uvicorn.jpg" alt="uvicorn" border="0"> <br><img src="https://i.ibb.co/yhrmZBz/fastapiinfernec.jpg" alt="fastapiinfernec" border="0"></li>
-    <li></li>
-    <li></li>
-    <li></li>
+  </ol>
+</div>
+<div>
+  <h2>Creating Docker</h2>
+  The creating docker image is discussed here.
+  <ol>
+    <li>The requirements file is created with pip freeze > requirements.txt</li>
+    <li>Few libraries are seperately installed as the docker hub provides larger files and it is avoided for that. The libraries are numpy, torch, torchvision.</li>
+    <li>The docker is built with this: docker build -t imageclf:latest . <br><img src="https://i.ibb.co/74WpWT7/dockerbuild.jpg" alt="dockerbuild" border="0"></li>
     <li></li>
     <li></li>
     <li></li>
