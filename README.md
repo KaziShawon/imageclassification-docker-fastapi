@@ -12,4 +12,10 @@ The target of the project is to build a image classification model and move the 
   <li>Deploying the FMNIST classifier on an Amazon Web Services (AWS) Elastic Compute Cloud (EC2)</li>
 </ol>
 
-<h2>Building a VGG16 Model</h2>
+<div>
+  <h2>Building a VGG16 Model</h2>
+  <p>For training this model I am using pytorch library. It provides torchvision module which will be used to download the pretrained model on Imagenet. I will describe the main steps in subsequents points.[Code](https://github.com/KaziShawon/imageclassification-docker-fastapi/blob/main/vgg16_vision_multiclass.ipynb)</p>
+  <ol>
+    <li>Ok</li>
+  </ol>
+</div>
